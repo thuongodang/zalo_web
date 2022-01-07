@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 64px;
+    background: #0091ff;    
+}
+
+.sidebar .ava_name{
+    margin-top: 20px;
+}
+
+.sidebar .ava_name img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    border-radius: 50px;
+    border: 1px solid #fff;
+}
+
+.sidebar .nav_list--top{
+    margin-top: 80px;
+    left: 0;
+}
+
+.sidebar .nav_list--bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar .nav_list--top li,
+.sidebar .nav_list--bottom li{
+    position: relative;
+    height: 64px;
+    width: 100%;    
+    margin: 0;
+    left: 0;
+    list-style: none;
+}
+
+
+.sidebar .nav_list--top li a,
+.sidebar .nav_list--bottom li a{
+    color: #fff;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar .nav_list--top li a:hover,
+.sidebar .nav_list--bottom li a:hover{
+    /* #006edc; */
+    white-space: nowrap;
+    background: #40adff;
+
+}
+
+.sidebar ul li i{
+    height: 50px;    
+    transform: translateX(10%);
+    text-align: center;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;    
+    font-size: 30px;    
+    text-align: center;
+}
+
+.sidebar ul li .tag_name,
+.sidebar .ava_name .tag_name{
+    position: absolute;
+    left: 50px;
+    color: #fff;
+    background: #000;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 5px;
+    border: 1px solid #fff;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+.sidebar ul li:hover .tag_name,
+.sidebar .ava_name:hover .tag_name{
+    /* transition: all 1s; */
+    white-space: nowrap;
+    display: block;
+    opacity: 1;
+}
+
+
+
