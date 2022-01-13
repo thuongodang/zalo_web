@@ -20,6 +20,7 @@ body{
     height: 100%;
     width: 64px;
     background: #0091ff;    
+    z-index: 1;
 }
 
 .sidebar .ava_name{
